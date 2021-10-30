@@ -22,6 +22,6 @@ def bothelp(_,message):
     else:
         bot.send_photo(message.chat.id , "https://telegra.ph/file/dc9104b228d9b660f54a4.jpg" ,  caption=HELPP_TEXT , reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("Pm me for more details"  , url="t.me/szrosebot?start=help")]
+                [InlineKeyboardButton("Pm me for more details"  , url="t.me/MHOFilter_bot?start=help")]
             
             ]))
