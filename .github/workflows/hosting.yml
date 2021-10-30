@@ -34,7 +34,7 @@ jobs:
        - name: cloning repo and install
          continue-on-error: true
          run: |
-           git clone https://github.com/SenuGamerBoy/EMIlia komi && cd komi && pip3 install -r requirements.txt
+           git clone https://github.com/KisaraPesanjithPerera/Komi-San komi && cd komi && pip3 install -r requirements.txt
            pwd
        - name: Running
          timeout-minutes: 350
@@ -43,4 +43,4 @@ jobs:
            curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -
            pwd
            cd komi
-           python3 -m EMIlia
+           python3 -m nksama
