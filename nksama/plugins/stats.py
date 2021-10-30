@@ -1,7 +1,7 @@
 from pyrogram import filters , Client
-from EMIlia import bot
+from nksama import bot
 from pymongo import MongoClient 
-from EMIlia.db import MONGO_URL as db_url
+from nksama.db import MONGO_URL as db_url
 
 users_db = MongoClient(db_url)['users']
 col = users_db['USER']
