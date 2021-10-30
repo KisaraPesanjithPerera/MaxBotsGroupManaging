@@ -51,7 +51,7 @@ def is_kuki(chat_id):
 BOT_ID = 2025517298
 
 @bot.on_message(
-    filters.command(["addchat", f"addchat@KomiSanRobot"])
+    filters.command(["addchat", f"addchat@MHOFilter_bot"])
 )
 async def addchat(_, message):
     chatk = message.chat.id
@@ -59,12 +59,12 @@ async def addchat(_, message):
     if not fuck:
         set_kuki(chatk)
         m.reply_text(
-            f"kuki AI Successfully {message.chat.id}"
+            f"𝐌𝐨𝐯𝐢𝐞𝐇𝐮𝐛 Ai added Successfully {message.chat.id}"
         )
     await asyncio.sleep(5)
 
 @bot.on_message(
-    filters.command(["rmchat", f"rmchat@KomiSanRobot"])
+    filters.command(["rmchat", f"rmchat@MHOFilter_bot"])
 )
 async def rmchat(_, message):
     chatk = message.chat.id
