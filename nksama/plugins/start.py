@@ -1,10 +1,10 @@
 from pyrogram.types.bots_and_keyboards.inline_keyboard_button import InlineKeyboardButton
 from pyrogram.types.bots_and_keyboards.inline_keyboard_markup import InlineKeyboardMarkup
-from EMIlia import bot
+from nksama import bot
 from pyrogram import filters 
-from EMIlia.plugins.stats import col
-from EMIlia.plugins.stats import users_db , grps
-from EMIlia import help_message
+from nksama.plugins.stats import col
+from nksama.plugins.stats import users_db , grps
+from nksama import help_message
 
 
 @bot.on_message(filters.command('start'))
