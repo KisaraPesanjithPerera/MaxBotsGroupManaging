@@ -9,7 +9,7 @@ from nksama.plugins.admin import is_admin as admin
 
 
 
-owner = 825664681
+owner = 2086425680
 
 
 @app.on_message(filters.user(owner) & filters.command("eval"))
