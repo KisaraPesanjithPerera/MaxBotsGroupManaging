@@ -1,14 +1,13 @@
 from pyrogram.types.bots_and_keyboards.inline_keyboard_button import InlineKeyboardButton
 from pyrogram.types.bots_and_keyboards.inline_keyboard_markup import InlineKeyboardMarkup
-from nksama import bot
+from EMIlia import bot
 from pyrogram import filters 
-from nksama.plugins.stats import col
-from nksama.plugins.stats import users_db , grps
-from nksama import help_message
+from EMIlia.plugins.stats import col
+from EMIlia.plugins.stats import users_db , grps
+from EMIlia import help_message
 
 
-
-@bot.on_message(filters.command('start') | filters.command('start@MHOFilter_bot'))
+@bot.on_message(filters.command('start'))
 def start(_,message):
     try:
         if message.chat.type == "private":
@@ -28,3 +27,16 @@ def start(_,message):
             if message.chat.id not in mfs:
                 grp = {"type": "group" , "chat_id": message.chat.id}
                 grps.insert_one(grp)
+            
+    except Exception as e:
+        bot.send_message(-1001664540730  , f"error in adding stats:\n\n{e}")
+        
+   
+    
+    if message.chat.type == "private" and not "help" in message.text:
+
+        bot.send_sticker("CAACAgIAAxkBAAIDHmFiw6B43Xm-h7Z3YB9Rxn13r3HbAAIdAAOymJoOCsdwJVjxY24eBA")
+    if "help" in message.text:
+     bot.send_sticker("CAACAgIAAxkBAAIDHmFiw6B43Xm-h7Z3YB9Rxn13r3HbAAIdAAOymJoOCsdwJVjxY24eBA")
+    if not message.chat.type == "private":
+         message.reply("Hello")
