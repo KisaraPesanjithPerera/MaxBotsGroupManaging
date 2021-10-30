@@ -30,6 +30,5 @@ musicbot = Client(
     api_hash=os.environ['API_HASH'],
 )
 
-
 help_message = []
 
