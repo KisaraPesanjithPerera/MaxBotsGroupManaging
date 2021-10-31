@@ -20,7 +20,7 @@ def bothelp(_,message):
         bot.send_message(message.chat.id , HELPP_TEXT , reply_markup=InlineKeyboardMarkup(keyboard))
 
     else:
-        bot.send_photo(message.chat.id , "https://telegra.ph/file/dc9104b228d9b660f54a4.jpg" ,  caption=HELPP_TEXT , reply_markup=InlineKeyboardMarkup(
+        bot.send_photo(message.chat.id , "https://telegra.ph/file/bfbe9ead3edd205f197c6.jpg" ,  caption=HELPP_TEXT , reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("Pm me for more details"  , url="t.me/MHOFilter_bot?start=help")]
             
