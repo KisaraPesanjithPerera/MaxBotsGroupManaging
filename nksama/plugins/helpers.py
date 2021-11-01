@@ -58,3 +58,9 @@ def callback_help(_,query):
             keyboard.append([InlineKeyboardButton(x['Module_Name'], callback_data=f"help:{x['Module_Name']}")])
         query.message.edit(HELPP_TEXT , reply_markup=InlineKeyboardMarkup(keyboard))
             
+    if query.data == "close":
+      try:
+        await query.message.reply_to_message.delete()
+        await query.message.delete()
+      except:
+        await query.message.delete()
