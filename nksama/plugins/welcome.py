@@ -51,4 +51,4 @@ def welcome(_,message):
     bot.send_message(-1001646296281 , f"error in welcome:\n]n{e}")
     
     
-help_message.append({"Module_Name": "welcome"})
+help_message.append({"Module_Name": "🌺 Welcome 🌺"})
