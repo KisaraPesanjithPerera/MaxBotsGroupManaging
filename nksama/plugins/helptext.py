@@ -26,9 +26,5 @@ class Help_Text:
     "welcome_help" : """• /setwelcome __welcome message - text for welcome__
 • /clearwelcome - __clear welcome message__""",
 
-    "autofilter_help" : """🆘 Help
-1. Add me to your group
-2. Then give me admin
-3. Just send the name of the movie/TV series.🎥 Result will come to you.😍""",
     
     }
