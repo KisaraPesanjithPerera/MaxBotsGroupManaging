@@ -1,4 +1,4 @@
-from pyrogram import Client as bot
+from nksama import bot
 from pyrogram import filters
 import os 
 from PIL import Image, ImageDraw, ImageFont
