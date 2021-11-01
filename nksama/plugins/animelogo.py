@@ -10,10 +10,10 @@ imgpath ="./resources/images/"
 listano = os.listdir(imgpath + "anime")
 
 @bot.on_message(filters.command("alogo"))
-async def logomake(_, message):
+async def logomakea(_, message):
     if len(message.command) < 2:
-            return await message.reply_text("Please give a text")
-    m = await message.reply_text("Creating Logo")
+            return await message.reply_text("Please give a text to make your logo 🤗")
+    m = await message.reply_text("Creating your Logo 🚀")
     text = message.text.split(None, 1)[1]
     img = Image.open(imgpath + "anime/" + (random.choice(listano)))
     draw = ImageDraw.Draw(img)
@@ -29,7 +29,7 @@ async def logomake(_, message):
     img.save(animelogo, "png")
     await message.reply_photo(
                 photo=f"animelogo.png",
-                caption="Your logo was created.",
+                caption="Your logo was created By @MovieHubOfficialSL",
             )
     await m.delete()       
     if os.path.exists(animelogo):
