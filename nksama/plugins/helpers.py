@@ -30,7 +30,7 @@ def is_admin(group_id: int, user_id: int):
 @bot.on_callback_query(call_back_in_filter('help'))
 def callback_help(_,query):
         
-    if not query.data == "help":
+    if not query.data == "helpm":
         try:
             for x in help_message:
                 module = query.data.split(':')[1]
