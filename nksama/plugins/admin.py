@@ -134,4 +134,4 @@ def demote(_,message):
         message.reply('Demoted @{} !'.format(message.reply_to_message.from_user.username))
      
      
-help_message.append({'Module_Name': 'admin'})
+help_message.append({'Module_Name': '👑 Admin 👑'})
