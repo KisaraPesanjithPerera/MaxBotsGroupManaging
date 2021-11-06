@@ -7,6 +7,8 @@ import time
 import requests
 from nksama import bot
 from pyrogram import filters
+from io import BytesIO
+from requests import get
 import os 
 from PIL import Image, ImageDraw, ImageFont
 import random
