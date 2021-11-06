@@ -1,3 +1,10 @@
+import os 
+import io
+import shutil 
+import random, re
+import glob
+import time
+import requests
 from nksama import bot
 from pyrogram import filters
 import os 
